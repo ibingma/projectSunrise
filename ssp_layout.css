@@ -1,0 +1,577 @@
+@charset "utf-8";
+
+
+/*------------------------------------------------
+Menu navigation bar
+------------------------------------------------*/
+#home_icon {
+	padding: 1px 0 2px 3.8px;	
+}
+
+nav.secondNavigation ul {	
+	margin: auto;
+}
+nav.secondNavigation li {
+   float:left;
+    width:20%;
+}
+
+
+/*-------------------------------------------------
+Welcome text Section
+--------------------------------------------------*/
+.text1 {
+	margin-bottom: 10px;
+}
+.text2 h2,.text2 p{
+	text-align: left;
+}
+.text2 {
+  padding: 2em 4em 1em 4em;
+}
+h3{
+	margin-top: 10px;
+}
+/* Our Mission and Our Vision row section */
+.row1 {
+	width: 80%;
+}
+/* Our value row section */
+.row2 {
+	width: 40%;
+	margin: 0 auto 50px ;
+}
+
+/*-------------------------------------------------
+Floor Plans Section
+--------------------------------------------------*/
+.fpRow {
+	display: flex;
+	flex-direction: column;	
+	background-color: rgb(230,204,167);
+	margin-bottom: 50px;
+}
+#floor_plan {
+	flex:1;
+	margin-top: -10px;
+}
+.floorPlanRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row ;
+	flex-flow: row;	
+	width: 80%;
+	margin:0 auto 50px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2em;	
+}
+
+/* Each column of text and floor plan image occupies one-third of the flexbox space*/
+.col-1-3 {
+	flex: 1;
+	max-width: 33.33%;
+	text-align: center;
+}
+.floorPlanRow .text2 {
+	padding: 0 1em;
+	margin-bottom: 2em;
+}
+.floorPlan img {	
+	display: block;
+	height: 300px;
+	width: auto;		
+}
+figcaption {
+	font-size: 0.85em; 
+	text-align: center; 
+}
+/* Clickable image to show enlarged floor plan image */
+.w3-modal {  
+  position: fixed; /* Ensures it stays in place even when scrolling */
+  z-index: 1000; /* Makes sure it appears above other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enables scrolling if the content is too large */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+	display: none;
+}
+.w3-modal-content p {
+	color: white;
+	font-weight: bold;
+	margin-top:-49px;
+}
+.w3-modal-content img {
+	width: 50%;
+	height: auto;
+}
+
+/*---------------------------------------
+Gallery Section
+----------------------------------------*/
+.gallery_content{
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	border: 4px solid ; /* Add a solid black border */
+   padding: 10px;          /* Add spacing between the border and content */
+   margin: 10px;           /* Add spacing outside the rectangle */    
+   height: 533px; 
+	border-color: rgb(224,227,215);	 
+}
+.prev, .next{
+	padding: 0.5em 1em;
+	background-color: rgb(224,227,215);
+	margin-bottom: 10px;
+}
+.prevNextButton button {
+	font-family: 'Roboto Light';
+	font-size: 1.5em;
+    line-height: 1.5em;
+    text-decoration: none;    
+    color: black;
+}
+
+/*---------------------------------------
+Form Section
+----------------------------------------*/
+.formSection {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap ;
+	flex-flow: row nowrap;	
+	width: 100%;
+	height: 80vh;	
+	margin: 8em auto 0 auto;
+	background-color: rgb(140,19,96);	
+}
+.formSection .col-1-2  {
+	padding-top: 80px;	
+}
+/* Text section */
+.sticky_note {
+	position: absolute;
+	background-color: yellow;
+	width: 10%;
+	padding: 2em;
+	margin-left: 29em;
+	margin-top: 1em;
+	transform: rotate(-10deg);
+	box-shadow: 5px 10px 10px black;
+}
+.formSection .col-1-2 h3  {
+	line-height: 1em;
+	padding: 50px 50px 50px 340px;
+	padding: 5% 5% 5% 50%;
+	padding: 1em 1em 1em clamp(2em, 18vw,10em);
+	color: white;
+}
+.formRow >label, legend {
+	color: white;
+}
+/* Form section */
+#custInfo {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	boder-radius: 20px;
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;	
+	padding: 10px;		
+	margin-right: 240px;
+}
+/* Form rows section */
+div.formRow {
+	display:-webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;	
+	padding: 0.5em 1em ;
+}
+/*Textarea setting*/
+#commBoxRow {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+#commBoxRow label {
+	width: 100%;
+}
+#commBox {
+	margin-top: 10px;
+	height: 40px;
+	resize: none;
+}
+#charCaption {
+   font-size: 0.7em;   /* Smaller text */ 
+   color: grey;       /* Optional: grey color for the caption */  
+}
+#buttons {
+	display: flex;
+	padding-left:20px; 
+	margin-bottom: 15px;
+}
+input[type='submit'] {
+	padding: 0 1em;
+}
+#buttons input[type="submit"] {
+  transition: background 3s, color 3s ease;
+}
+#buttons input[type="submit"]:hover {
+	background: rgb(140,19,96);
+	color: hsla(132,11%,91%, 90%);
+}
+/*---------------------------------------
+Complements Section
+----------------------------------------*/
+div#marquee {
+    
+   height: 44vh;
+   overflow:hidden;
+  
+   margin-top: 5%;
+	position: relative; /* Containing block for the #wishes */
+	width: 100%;
+}
+
+div#quotes {
+	position: absolute; /* Absolute position relative to #marquee. This will */
+	/*white-space: nowrap;*/
+}								/*	allow it to scroll up independent of the main page */
+
+
+/* Keyframe Styles */
+@keyframes scroll {
+	0% {transform: translateX(20%);}
+	100% { transform: translateX(-100%); }
+}
+
+/* Animation Styles */
+#quotes {
+	animation: scroll 100s linear infinite; /* keeps on scrolling */
+	display: flex;
+	
+	width: 457%;
+	gap: 18em;
+	
+	}
+	#quotes blockquote {
+		width: 20%;
+		padding: 2em 3em 0 3em;
+		
+	
+		display: inline-block;
+		font-size: 2em;
+	}
+	#quotes footer {
+		background-color: transparent;
+		height: 50%;
+	}
+
+#quotes:hover  {
+	animation-play-state: paused; /* paused the scroll when mouse hovered */
+}
+
+/*---------------------------------------
+Footer Section
+----------------------------------------*/
+footer {
+	margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#ssp {
+		font-size: 12px;		
+	}
+	#body_ssp {
+	  height: 100vh;
+	  min-height: 100%;
+	  max-width: 480px;
+	  min-width: 350px;
+	  width: 100%;	 
+	}
+
+	#header_image #MainImage480 {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		z-index: 800;
+	}
+	#about_ssp h1 {
+		line-height: 1em;
+		margin-top:40px;
+		margin-bottom:30px;
+	}
+	#about_ssp p {
+	  width: 80%;
+	  margin: auto;
+	}
+	#heading_ssp span{
+		display: block;
+	}
+	#floor_plan {
+	  flex: 1;
+	  margin-top: -10px;
+	  margin-bottom: -40px;
+	}
+	
+	.floorPlanRow .text2 {
+		padding: 2.5em 1em 0 1em;
+	}
+	.row1 {
+	  width: 100%;
+	}
+	.row2 {
+	  width: 100%;
+	  margin: 0;
+	}
+	.w3-modal-content img {
+	  width: 95% !important;
+	  height: auto;
+	}
+	.fpRow {
+		margin-top: 5em;
+		max-width: 90%;
+	}
+	.floorPlanRow {  
+		flex-flow: column;  
+		width: 100%;
+		margin: 0 ;
+		gap: 0;
+	}
+	.col-1-3 {
+	  flex: 1;
+	  max-width: 100%;
+	  text-align: center;
+	}
+	  #floor_plan1 {
+    height: 31vh;	
+  } 
+  #floor_plan2 {
+    height: 28vh;	
+  }
+  #floor_plan3 {
+    height: 28vh;	
+  }
+  .gallery_content h3{
+	  margin-top: -50px;
+  }
+	.gallery_ssp .content {	  
+	  padding: 10px;
+	  margin: 10px;
+	  height: 30vh;
+	  border-color: rgb(224,227,215);
+	}	
+	.gallery_ssp {
+	  margin: 0;	 
+	}
+    .mySlides {
+    width: 100% !important;
+	 } 
+	.sticky_note {		
+		width: 41%;
+		padding: 0.5em;
+		margin-left: 2em;
+		margin-top: 4em;
+		transform: rotate(-8deg);		
+	}	 
+   .formSection{
+		height: 85%;		
+		display: flex;
+		flex-flow: column;		
+		margin-top: 8em;
+	}	
+	.formSection .col-1-2 {
+		padding-top: 32px;
+	}
+	.formSection .col-1-2 h3 {
+		font-size: 2.5em;
+		text-align: left;
+	  padding: 0 20px;	  	  
+	}
+	#custInfo {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	boder-radius: 20px;
+	-webkit-flex: 0 1 70%;
+	flex: 0 1 70%;	
+	padding: 10px;		
+	margin-right: 0;
+	border: none;
+	}	
+	#formText_ssp {
+		flex: 0;
+	}
+	  footer {
+    height:35vh;
+  }
+  div#marquee {
+  height: 34vh; 
+  margin-top: 16%; 
+}
+  #quotes {
+ 
+  width: 636%;
+  gap: 8em;
+}
+#quotes blockquote {
+
+  padding: 0;
+ 
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+	nav.topNavigation li {
+		width: 48%;
+	}
+	.text1 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	#about_ssp h1 {
+		line-height: 1.3em;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	#heading_ssp span{
+		display: block;
+	}
+   #about_ssp p {
+		width: 80%;
+		margin: auto;
+	}
+	.row1 {
+		width:100%;
+	}
+	.row2 {
+		width: 100%;	
+	}
+	#floor_plan {	 
+		margin-bottom: -45px;
+	}
+	.floorPlanRow {
+		flex-flow: column;
+		width: 100%;
+		margin: 0;
+		gap: 0;
+	}
+	.col-1-3 {
+		flex: 1;
+		max-width: 90%;
+		text-align: center;
+	}
+   .floorPlanRow .text2 {
+		padding: 2em 1em 0 1em;
+	}
+	.w3-modal {
+		width: 63%;
+	}
+   .w3-modal-content img {
+		width: 95% !important;
+		height: auto;
+	}
+	.content {
+		width: 94%;	  
+	}
+   .gallery_ssp .content {
+		padding: 10px;    
+		height: 41vh;
+		border-color: rgb(224,227,215);
+	}
+   .mySlides {
+		width: 90% !important;
+	}
+	.formSection {
+		height: 120%;
+		display: flex;
+		flex-flow: column;
+		padding-bottom: 72em;
+	}
+	
+	.formSection .col-1-2 {
+		padding-top: 0;
+	}
+	.sticky_note {	  
+	  width: 28%;
+	  padding: 1em;
+	  margin-left: 3em;
+	  margin-top: 2em;	  
+	}
+	#custInfo{
+		flex-flow: column;
+		boder-radius: 20px;		
+		flex: 0 1 70%;
+		padding: 10px;
+		margin: 0 6em;
+	}
+	.footerNavigation ul {
+		flex-flow: column;
+	}
+	.footerNavigation .footer_menu li {  
+		margin-top:0;
+	}
+	div#marquee { 
+		margin-top: 17%;  
+	}
+	#quotes blockquote {
+		padding: 0;
+	}
+	#quotes {
+		width: 614%;
+		gap: 5em;
+	}	
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
+	#MainImage {
+		display: block;
+	}
+	.floorPlanRow {
+		flex-flow: column;
+		width: 100%;
+		margin: 0;
+		gap: 0;
+	}
+	.col-1-3 {
+		flex: 1;
+		max-width: 100%;
+		text-align: center;
+		margin: auto;
+	}
+	.floorPlan img {
+		display: block;
+		height: 330px;
+		width: auto;
+	}
+	figcaption {
+		margin-bottom: 3em;
+	}
+	.sticky_note {		
+		width: 21%;		
+		margin-left: 13em;
+		margin-top: 2em;
+	}
+	.formSection {		
+		height: 90vh;		
+	}
+	#quotes {
+ 
+  width: 557%;
+ 
+}
+	
+	#quotes blockquote {
+	  padding: 0 ;
+	
+	}
+}

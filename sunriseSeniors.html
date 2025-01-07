@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<!-- 
+	This is the html code for the 'Sunrise Seniors Place' page. 
+	
+	Author: Ibing Maharlika
+	Date: 12/28/24
+-->
+
+<html lang="en" id="ssp">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keyword" content="retirement, retirement home, oshawa, senior, senior place, Durham, independent, co-op">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+	<title> Sunrise Seniors Place </title>	
+
+	<link href="reset.css" rel="stylesheet">
+	
+	
+	<link href="main_layout.css" rel="stylesheet">
+	<link href="main_styles.css" rel="stylesheet">
+	
+	
+	<link href="sc_layout.css" rel="stylesheet">
+	
+	<link href="ssp_layout.css" rel="stylesheet">
+	<link href="ssp_styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="ssp_script.js" defer></script>
+	<script src="rb_formsubmit.js"></script>
+</head>
+<body id="body_ssp">
+	<header>
+		<!-- Navigation to be used in 480px max screen only -->
+		<nav id="third_nav" class="thirdNavigation">
+			<button id="navicon" >
+				<img src="Images/MainPageImage/fr_navicon.png" alt="Navigation Icon">
+			</button>
+			<ul class="third_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+				<li><a href="#about_ssp">About Us</a></li>
+				<li><a href="#floor_plan">Floor Plans</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#formText_ssp">Contact Us</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>			
+		</nav>
+		
+		<a href="index.html" id="homeIcon">
+			<button id="home_icon" >
+				<img src="Images/MainPageImage/home_icon.png" alt="Navigation Icon">
+			</button>
+		</a>
+	
+		<nav id="top_nav" class="topNavigation">
+			<ul class="top_menu">
+				<li class="link_ssp"><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+			</ul>
+		</nav>
+		
+		<div id="header_image">
+			<img src="Images/SunriseSeniorsImage/sunrise-seniors-place.png" alt="" id="MainImage">
+			<img src="Images/SunriseSeniorsImage/sunrise-seniors-place480.png" alt="" id="MainImage480">
+			<img src="Images/SunriseSeniorsImage/sunrise-seniors-place640.png" alt="" id="MainImage640">
+		</div>
+
+		<nav id="second_nav" class="secondNavigation">
+			<ul class="second_menu">
+				<li><a href="#about_ssp">About Us</a></li>
+				<li><a href="#floor_plan">Floor Plans</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#formText_ssp">Contact Us</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- This section includes the welcome texts, floor plans sections, and gallery -->
+	<section class="introduction">
+		<div id ="about_ssp" class="text1">
+			<h1 id="heading_ssp">
+				Welcome to <span>Sunrise Seniors Place</span>
+			</h1>
+			<p>
+				More details about Sunrise Seniors Place. Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit. Aliquam eget sagittis ligula, 
+				eget ornare felis. In porttitor libero vitae suscipit dictum. 				
+			</p>
+		</div>	
+		<!--There are 2 columns in this row, they will be displayed in a row using flexbox -->
+		<div class="row1">			
+			<div class="col-1-2">	
+				<div class="text2">
+					<h2>
+						Our Mission:
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Morbi dignissim massa dui, at convallis turpis pulvinar 
+						accumsan. Aenean mattis, magna et scelerisque sollicitudin,
+						orci massa iaculis sem. 
+					</p>
+				</div>
+			</div>
+			<div class="col-1-2">	
+				<div class="text2">
+					<h2>
+						Our Vision:
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Morbi dignissim massa dui, at convallis turpis pulvinar 
+						accumsan. Aenean mattis, magna et scelerisque sollicitudin,
+						orci massa iaculis sem, eget vestibulum metus felis a lacus.
+						Etiam consequat neque diam, non cursus lectus tristique et.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<!-- This is the second row which consist of only one column -->
+		<div class="row2">
+			<div class="col-1-1">	
+				<div class="text2">
+					<h2>
+						Our Value:
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Morbi dignissim massa dui,eget vestibulum metus felis a lacus.
+						Etiam consequat neque diam, non cursus lectus tristique et.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="fpRow">
+		<h3 id="floor_plan">
+			Floor Plans
+		</h3>
+		<!-- In this floor plan section, there are 3 columns which will be displayed in a single row using flexbox -->
+		
+			<div class="floorPlanRow">
+				<div class="col-1-3">			
+					<div class="text2">
+						<h2>
+							Studio room Plan
+						</h2>
+						<p>
+							At convallis turpis pulvinar consectetur adipiscing elit. 
+							Morbi dignissim.
+						</p>
+					</div>
+					<div class="floorPlan">
+						<img src="Images/SunriseSeniorsImage/floor_plan1.png" 
+						alt="" id="floor_plan1" style="cursor:zoom-in" title="click on the image to zoom in"
+						onclick="document.getElementById('modal01').style.display='block'">
+						<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="Images/SunriseSeniorsImage/floor_plan1A.png" alt="" style="width:45%">
+								<p>Click anywhere to zoom out.</p>
+							</div>
+						</div>					
+						<figcaption>
+							 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+						</figcaption>					
+					</div>
+					
+				</div>
+				<div class="col-1-3">			
+					<div class="text2">
+						<h2>
+							One-Bedroom Plan
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Morbi dignissim massa dui.
+						</p>
+					</div>
+					<div class="floorPlan">
+						<img src="Images/SunriseSeniorsImage/floor_plan2.png" alt="" id="floor_plan2" style="cursor:zoom-in" title="click on the image to zoom in"
+						onclick="document.getElementById('modal02').style.display='block'">
+						<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="Images/SunriseSeniorsImage/floor_plan2A.png" alt="" style="width:45%">
+								<p>Click anywhere to zoom out.</p>
+							</div>
+						</div>					
+					<figcaption>
+						 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+					</figcaption>
+					</div>
+					
+				</div>
+				<div class="col-1-3">			
+					<div class="text2">
+						<h2>
+							Two-Bedroom Plan
+						</h2>
+						<p>						 
+							Morbi dignissim massa dui, at convallis turpis pulvinar 
+							accumsan. 
+						</p>
+					</div>
+					<div class="floorPlan">
+						<img src="Images/SunriseSeniorsImage/floor_plan3.png" alt="" id="floor_plan3" style="cursor:zoom-in" title="click on the image to zoom in"
+						onclick="document.getElementById('modal03').style.display='block'">
+						<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="Images/SunriseSeniorsImage/floor_plan2A.png" alt="" style="width:45%">
+								<p>Click anywhere to zoom out.</p>
+							</div>
+						</div>					
+					<figcaption>
+						 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+					</figcaption>
+					</div>				
+				</div>			
+			</div>
+			<div class="footnote">
+				<p>
+					Click on the images to zoom in.
+				</p>
+			</div>			
+		</div>
+		<div class="gallery_content">
+			<h3 id="gallery">
+				Gallery
+			</h3>			
+			<div class="gallery_ssp">
+				<div class="content" style="max-width:800px">
+					<!--Video slide -->
+					<video class="mySlides" controls poster="Images/SunriseSeniorsImage/beach_mixit.png" style="width:100%">
+						<source src="Images/SunriseSeniorsImage/beach_mixit2.mp4" type="video/mp4" >
+						<p><em>To play this clip, your browser needs to support HTML5.</em></p>
+					</video>
+					
+					<img class="mySlides" src="Images/SunriseSeniorsImage/banff.jpg" alt="" style="width:100%">
+					<img class="mySlides" src="Images/SunriseSeniorsImage/autumn.jpg" alt="" style="width:100%">
+					<img class="mySlides" src="Images/SunriseSeniorsImage/lighthouse.jpg" alt="" style="width:100%">
+				</div>
+				<div class="center">
+					<div id="nav_buttons" class="prevNextButton">
+						<button class="prev" onclick="plusDivs(-1)">❮ Prev</button>
+						<button class="next" onclick="plusDivs(1)">Next ❯</button>
+					</div>					
+				</div>
+			</div>
+		</div>		
+		
+	</section>
+	<div class="sticky_note">
+		<p>
+			We'd love to connect with you!
+		</p>
+	</div>
+	<!-- This is the section for the form only. There are 2 sections, on the left-side will be the texts
+			and right-side will be the form -->
+	<section class="formSection">
+		
+		<div id= "formText_ssp" class="col-1-2">	
+			<h3>
+				Requests rates, availability, book a tour, or ask us about your retirement living options.
+			</h3>
+		</div>
+		
+		<div id="form_ssp" class="col-1-2">	
+			<form id="cInfo" action="http://www.example.com/sample" method="post">
+				<fieldset id="custInfo">			
+					<legend>Please fill out this form</legend>
+						
+					<div class="formRow">	
+						<label for="fName">First Name*</label>
+						<input name="firstName" id="fName" type="text" placeholder="First name" required >
+					</div>	
+					<div class="formRow">	
+						<label for="lName">Last Name*</label>
+						<input name="lastName" id="lName" type="text" placeholder="Last name" required >
+					</div>	
+					<div class="formRow">	
+						<label for="phone">Phone number</label>
+						<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+						pattern="^\d{10}$|^(\d3\s*)?\d{3}[\s-]?\d{4}$" >
+					</div>	
+					<div class="formRow">	
+						<label for="mail">E-mail*</label>
+						<input name="custEmail" id="mail" type="email"	required >
+					</div>	
+					
+					<div class="formRow">
+						<label for="request">I would like to...</label>
+						<select name="occupationType" id="occupation">
+							<option value="request1">book a tour.</option>
+							<option value="request2">inquire about pricing.</option>
+							<option value="request3">inquire about personal care.</option>
+							<option value="request4">inquire about dining.</option>
+							<option value="request5">others.</option>
+						</select>
+					</div>
+					
+					<div class="formRow" id="commBoxRow">
+						<label for="commBox">Comment</label>
+						<textarea name="custExp" id="commBox" maxlength="500"></textarea>
+						<p id="charCaption">Limit: 500 characters</p>
+					</div>	
+
+					<div id="buttons">					
+						<input type="submit" value="Submit" >
+					</div>					
+				</fieldset>	
+			</form>
+		</div>
+	</section>	
+	
+	<section class="compliments">
+		<div id="marquee">
+			<div id="quotes">
+				<blockquote>
+				  "The staff here are absolutely amazing! Emily at the front desk is always so welcoming and helpful. She truly makes this place feel like home."
+				  <footer>— John D.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "I can’t believe how spotless and well-maintained the building is. Kudos to the maintenance team, especially Carlos, for keeping everything in perfect condition!"
+				  <footer>— Sarah W.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "The apartment layout is so spacious and modern. I’ve lived in many places, but nothing beats the comfort of this one. Thank you for such a great experience!"
+				  <footer>— Michael R.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "The building is located in such a convenient area, and the neighborhood is so peaceful. Special thanks to Jessica for recommending this place to me!"
+				  <footer>— Lisa T.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "The management team is fantastic! Nathan helped me with all the paperwork, and the process couldn’t have been smoother."
+				  <footer>— Alex H.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "I love how quiet and serene this apartment complex is. Shoutout to the cleaning crew for keeping everything looking great every day."
+				  <footer>— Emma L.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "I’ve never had a better living experience. Samantha in the leasing office is such a gem—always friendly and professional!"
+				  <footer>— David C.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "The amenities here are top-notch! Everything is well-maintained. Thank you, Chris, for always making sure we have what we need!"
+				  <footer>— Olivia P.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "The building’s security is excellent, and I always feel safe. Marcus and the security team do a great job around the clock!"
+				  <footer>— Noah M.</footer>
+				</blockquote>
+
+				<blockquote>
+				  "Moving in was so easy, thanks to Megan from the office. She was incredibly supportive and answered all my questions promptly."
+				  <footer>— Sophia K.</footer>
+				</blockquote>
+				
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<h4 id="footer_logo">
+			Sunrise
+		</h4>
+		<nav id="footer_nav" class="footerNavigation">
+			<ul class="footer_menu">
+				<li><a href="https://sunriseseniors.com">Sunrise's current website</a></li>
+				<li><a href="">Join Our Teams</a></li>
+				<li><a href="projectDocumentation.html">Project Documentation</a></li>
+				<li><a href="evaluationForm.html">Evaluation Form</a></li>
+				<li><a href="reference.html">Reference</a></li>
+			</ul>
+		</nav>
+		<div class="foot_copy" >
+			<p id="copyRight">Ibing Maharlika &copy; 2025 All Rights Reserved</p>
+		</div>
+	</footer>
+	</body>
+	</html>

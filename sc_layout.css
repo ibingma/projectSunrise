@@ -1,0 +1,450 @@
+@charset "utf-8";
+.introduction {
+	margin-bottom: 0;
+}
+.intro2 {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	position: relative;
+	height: auto;
+	text-align: center; /* Center-align text */
+	margin: 50px auto 0; /* Centers the section itself in the viewport */ 
+	max-width: 80%;	
+	left: 0;
+	right: 0;	
+	gap: 80px;	
+}
+.left, .right {
+	display: flex;
+	flex: 0 1 50%;
+	margin: 0;	
+}
+.text2 {
+	padding:0 0 50px 0;
+}
+.mainFloorPlan h3 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.mainFloorPlan {
+	width: 80%;
+	margin: auto;	
+}
+.apartment h2 {
+	margin-left:  50px;
+}
+.apartment {
+	background-color:rgb(224,227,215);
+	height: 680px;
+}
+.tablink{	
+	all: unset;	
+	cursor: pointer;
+	background-color: rgb(140,19,96);		
+	font-family: 'Roboto Light';
+	font-size: 2em;
+    line-height: 2.5em;
+    text-decoration: none;    
+    color: white;
+	 width:270px;
+	 text-align: center;
+}
+.w3-red {
+  background-color: red;
+  color: white;
+}
+.floorPlan img {
+	margin: auto;
+	height: 510px;
+	width: auto;
+}
+.gallery {
+	margin:50px auto;
+	text-align: center;
+}
+.galleryContent {
+	margin: auto;	
+	box-shadow: 10px 10px 10px black;
+}
+.mySlides {
+	margin: auto;
+}
+button {
+	padding:2em 1em;
+}
+.buttonLeft {
+	position: absolute;
+	margin-left: -455px;
+  margin-top: -298px;
+}
+.buttonRight {
+	position: absolute;
+	margin-left:416px;
+	margin-top: -298px;
+}
+
+#localTime{
+	color: white;
+	background-color: rgb(140,19,96);	
+	text-align: center;	
+	width:10%;
+	margin: 1.5em auto 0;
+	font-size:1.2em;	
+}
+#timeHeading {
+	color: white;
+	font-size:1em;
+	margin: 0;
+	padding: 0;
+	line-height: 2em;
+	}
+.event {
+	display: flex;
+	flex-direction: row;	
+	Height: 72%;
+}
+.event_background {
+  position: relative; /* Establish a positioning context for the child elements */
+  width: 100%; /* Set the desired width of the container */
+  height: auto; /* Adjust height based on content or manually set */
+}
+#eventBackground {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 75%; /* Ensure it fills the container */
+  z-index: 1; /* Ensure this image is at the back */
+  opacity: 50%;
+}
+#eventForeground {
+  position: absolute;
+  top:19%;
+  left: 27%;
+  width: 66%; /* Match the background image size */
+  z-index: 2; /* Ensure this image is on top */
+  opacity: 80%;
+}
+.event_text {
+	position: relative;
+	top:17%;
+}
+.event_background,
+.event_text {
+	flex: 0 1 50%;
+}
+/* Count Down - time container layout setting */
+div#countdown {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+	position: relative;
+	top: 4.5em;
+	right: 0px;
+	left: 0px;
+   width: 86%;
+  	margin-left : 1.5em;	
+}
+/* Count Down - time text setting */
+div#countdown div {
+   display: block;  
+   width: 20%;  
+   margin: 0px 1px;
+   padding: 5px;	
+	font-family: 'Roboto Light';
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+/* Count Down - time text setting */
+div#countdown div {
+	text-align: center;	
+	background-color:rgb(224,227,215);
+}
+#countdown div span {
+  font-size: 2rem; 
+  font-weight: bold;
+  color: rgb(140,19,96); 
+}
+#display_date {
+	position: relative;
+	top: 17%;
+	left: 22%;
+	text-align: center;
+	border: 2px solid rgb(224,227,215);
+	padding: 1em;
+	border-radius: 25px;
+	width: 30%;
+}
+#date {
+	font-weight: bold;
+	font-size: 2em;
+	font-style: italic;
+}
+@media only screen and (max-width: 480px) {	
+	#navicon {
+		padding: 0;
+	}	
+	.text1 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	#about_us h1 {
+		line-height: 1.5em;		
+		margin: 50px auto;
+		text-align:center;
+	}
+	.heading span{
+		display: block;
+	}
+	.intro2 {
+		flex-direction: column;
+		gap: 0;
+	}
+	/* Floor Plan section */	
+	#floor_plan {    
+		margin-bottom: -1px;
+	}
+	.tablink {		
+		width: 32vh;
+	}
+	.mainFloorPlan {
+	  width: 91%;
+	  margin: auto;
+	}
+	#floor_plan3,
+	#floor_plan2 {
+		height: 45vh;
+	}  
+	.floorPlan img {
+	  margin: auto;
+	  height: 45vh;
+	  width: auto;  
+	}
+	#floor_plan1 {
+		height: 52vh;
+	}	
+	.apartment {		
+		height: 65vh;
+	}	
+	/* Gallery section*/
+	.mySlides {
+	  width: 80% !important;
+	}	
+	.galleryContent {	
+		box-shadow: 0 0 0 0;
+	}
+	.buttonLeft {
+		margin-left: -266px;
+		margin-top: -216px;
+	}
+	.buttonRight {		
+		margin-left: 228px;
+		margin-top: -216px;
+	}
+	button {
+	  padding: 1em 1em;
+	}
+	/* Form section */
+	.sticky_note {
+		width: 50%;		
+		margin-left: 5em;
+		margin-top: 4em;		
+	}
+	.formSection{
+		height: 100%;
+		width: 90%;
+		display: flex;
+		flex-flow: column;
+		margin-bottom: 4em;
+		margin-top: 10em;
+	}	
+	.formSection .col-1-2 {
+		padding-top: 20px;
+	}
+	.formSection .col-1-2 h3 {
+		font-size: 2.5em;
+		text-align: left;
+	  padding: 0 20px;	  	  
+	}
+	#custInfo {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		boder-radius: 20px;
+		-webkit-flex: 0 1 70%;
+		flex: 0 1 70%;	
+		padding: 10px;		
+		margin-right: 0;
+	}	
+	.event {
+		Height: 59%;
+	}
+	.event_background {
+		display:none;
+	}
+	.event_text {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.event_text h3 {
+		line-height: 1em;
+		margin-top: -1em;
+	}
+	div#countdown {
+	  width: 154%;
+	  margin-left: -3.5em;
+	}
+	#display_date {	 
+	  left: -7%;
+	  width: 100%;
+	}
+	#localTime {	 
+	  width: 32%;
+	}	
+	footer {
+	  height: 50vh;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {	
+	.text1 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.text1 p {
+		width: 90%;
+	}
+  .heading span{
+		display: block;
+	}
+	#about_us h1 {
+		line-height: 1.5em;
+		margin: 50px auto;
+		text-align: center;
+	}
+   .intro2 {
+		flex-direction: column;
+		gap: 0;
+	}
+	.mainFloorPlan {
+		width: 100%;
+	}
+    #floor_plan {
+		margin-bottom: -5px;
+  }
+	.tablink {
+		width: 71vh;
+	}
+	.galleryContent {	
+		box-shadow: 0 0 0 0;
+	}
+	.buttonLeft {
+		margin-left: -298px;
+		margin-top: -216px;
+	}
+	.buttonRight {
+		margin-left: 259px;
+		margin-top: -216px;
+	}
+	.sticky_note {
+		margin-top: -1em;
+	}
+	.event {
+		Height: 59%;
+	}
+	.event_background {
+		display:none;
+	}
+	.event_text {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.event_text h3 {
+		line-height: 1em;
+		margin-top: -1em;
+	}
+	div#countdown {
+		width: 154%;
+		margin-left: -3.5em;
+	}
+	#display_date {
+		left: 0;
+	}
+	#localTime {
+		width: 32%;
+	}
+	footer {
+		height: 46vh;
+	}
+}
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+	.event {
+		display: block;
+	}
+	.event_background {
+		z-index: -1;
+		opacity: 50%;
+		top: 10%;
+		left: -5%;
+	}
+	.event_text {
+  position: relative;
+  top: 16%;
+  left: 10%;
+	}
+	.event_text h3 {
+		font-weight: 900;
+		text-shadow: 2px 2px 8px #FF0000;
+	}
+	#display_date {
+  position: absolute;
+  top: 143%;
+  left: 25%;
+  
+}
+  #localTime {
+  
+  width: 15%;
+ 
+}
+}
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+.event {
+	Height: 63%;
+}
+.event_background {
+	height: 58%;
+}
+#eventBackground {
+  top: 22%;
+  left: 4%;
+  width: 94%;
+ 	}
+	#eventForeground {
+  top: 30%;
+  left: 18%;
+  width: 76%;
+  }
+  .event_text {
+	  padding-left: 3em;
+  }
+  .event_text h3 {
+	  line-height: 1em;
+	  
+  }
+  #localTime {
+  
+  width: 15%;
+ 
+}
+}

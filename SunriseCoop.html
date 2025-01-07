@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<!-- 
+	This is the html code for the 'Sunrise Place Co-op' page. 
+	
+	Author: Ibing Maharlika
+	Date: 12/29/24
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keyword" content="retirement, retirement home, oshawa, senior, senior place, Durham, independent, co-op">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title> Sunrise Seniors Place </title>	
+
+	<link href="reset.css" rel="stylesheet">		
+	<link href="main_layout.css" rel="stylesheet">  <!-- Main page layout setting which includes setting for other pages as well -->
+	<link href="main_styles.css" rel="stylesheet"> <!-- Main page style setting which includes setting for other pages as well -->		
+	<link href="ssp_layout.css" rel="stylesheet"> <!-- Layout setting for the Sunrise Seniors Place page -->
+	<link href="ssp_styles.css" rel="stylesheet">	
+	<link href="sc_layout.css" rel="stylesheet"> <!-- Additional layout setting for this page -->
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	 <script src="sc_script.js" defer ></script>
+	 <script src="rb_formsubmit.js"></script>
+	
+</head>
+<body>
+	<header>
+		<!-- Navigation to be used in 480px max screen only -->
+		<nav id="third_nav" class="thirdNavigation">
+			<button id="navicon" >
+				<img src="Images/MainPageImage/fr_navicon.png" alt="Navigation Icon">
+			</button>
+			<ul class="third_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="#floor_plan">Floor Plans</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#formText">Contact Us</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>
+			
+		</nav>
+		<a href="index.html" id="homeIcon">
+			<button id="home_icon" >
+				<img src="Images/MainPageImage/home_icon.png" alt="Navigation Icon">
+			</button>
+		</a>
+	
+		<nav id="top_nav" class="topNavigation">
+			<ul class="top_menu">
+				<li class="link_ssp"><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+			</ul>
+		</nav>
+		
+		<div id="header_image">
+			<img src="Images/SunriseCoopImage/sunriseCoop.png" alt="" id="MainImage">
+			<img src="Images/SunriseCoopImage/sunriseCoop480.png" alt="" id="MainImage480">
+			<img src="Images/SunriseCoopImage/sunriseCoop640.png" alt="" id="MainImage640">
+		</div>
+
+		<nav id="second_nav" class="secondNavigation">
+			<ul class="second_menu">
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="#floor_plan">Floor Plans</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#formText">Contact Us</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- This section includes the welcome texts and floor plans sections -->
+	<section class="introduction">		
+		<div id="about_us"class="text1">
+			<h1 class="heading">
+				Welcome to <span>Sunrise Place Co-op</span>
+			</h1>
+			<p>
+				More details about Sunrise Seniors Place. Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit. Aliquam eget sagittis ligula, 
+				eget ornare felis. In porttitor libero vitae suscipit dictum. 				
+			</p>
+		</div>	
+		<!--There are 2 columns in this row, they will be displayed in a row using flexbox -->
+		<section class="intro2">
+			<div class="left">			
+				<div class="col-1-2">	
+					<div class="text2">
+						<h2>
+							Our Mission:
+						</h2>
+						<p>
+							We are dedicated to providing low-cost housing exclusively for the aged. 
+						</p>
+						<p>
+							<strong><em>What is a Co-op?</em></strong> Co-ops are governed by the people who live there called Members,
+							and make important decisions about what happens in the co-op.  Members are encouraged 
+							to contribute some of their talent to the co-op to make it a healthy and safe environment to live.
+						</p>
+					</div>				
+					<div class="text2">
+						<h2>
+							Our Value:
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Morbi dignissim massa dui,eget vestibulum metus felis a lacus.
+							Etiam consequat neque diam, non cursus lectus tristique et.
+						</p>
+					</div>			
+				</div>
+			</div>
+			
+			<!-- This is the second row which consist of only one column -->
+			<div class="right">
+				<div class="col-1-2">	
+					<div class="text2">
+						<h2>
+							Our Vision:
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Morbi dignissim massa dui, at convallis turpis pulvinar 
+							accumsan. Aenean mattis, magna et scelerisque sollicitudin,
+							orci massa iaculis sem, eget vestibulum metus felis a lacus.
+							Etiam consequat neque diam, non cursus lectus tristique et.
+							Donec ullamcorper arcu a ipsum scelerisque, non semper tortor lacinia. 
+							Praesent posuere dui at augue tincidunt, ut dapibus elit ullamcorper. 
+							In lectus justo, sodales sed scelerisque sed, finibus eget leo. 
+							Vestibulum et fringilla risus. In hac habitasse platea dictumst. 
+							Vivamus luctus id urna et cursus. Donec eu venenatis sapien.
+							
+						</p>
+					</div>
+				</div>
+			</div>	
+		</section>
+	
+	</section>
+		
+	<section  class="mainFloorPlan">
+	<h3 id="floor_plan">
+		Floor Plans
+	</h3>
+	
+	<div class="buttonTab">
+    <button class="tablink w3-red" onclick="openTab(event,'studio')">Studio</button>
+    <button class="tablink" onclick="openTab(event,'oneBedroom')">One-Bedroom</button>
+    <button class= "tablink" onclick="openTab(event,'twoBedroom')">Two-Bedroom</button>
+  </div>
+		
+		<div id="studio" class="apartment">
+		  <h2>Studio Room Plan</h2>
+		 <div class="floorPlan">
+			<img src="Images/SunriseSeniorsImage/floor_plan1.png" alt="" id="floor_plan1">
+			<figcaption>
+				 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+			</figcaption>
+		</div>
+		</div>
+
+		<div id="oneBedroom" class="apartment" style="display:none">
+		  <h2>One-Bedroom Plan</h2>
+		  <div class="floorPlan">
+				<img src="Images/SunriseSeniorsImage/floor_plan2.png" alt="" id="floor_plan2">
+				<figcaption>
+					 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+				</figcaption>
+			</div>
+		</div>
+
+		<div id="twoBedroom" class="apartment" style="display:none">
+		  <h2>Two-Bedroom Plan</h2>
+		  <div class="floorPlan">
+				<img src="Images/SunriseSeniorsImage/floor_plan3.png" alt="" id="floor_plan3">
+				<figcaption>
+					 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+				</figcaption>
+			</div>				
+		</div>		
+	</section>
+	
+	<section class="gallery">
+		<h3 id="gallery">
+			Gallery
+		</h3>		
+		<div class="galleryContent" style="max-width:800px">
+		  <img class="mySlides" src="Images/SunriseSeniorsImage/autumn.jpg" style="width:100%">
+		  <img class="mySlides" src="Images/SunriseSeniorsImage/banff.jpg" style="width:100%">
+		  <img class="mySlides" src="Images/SunriseSeniorsImage/lighthouse.jpg" style="width:100%">		  
+	
+		  <button class="buttonLeft" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="buttonRight" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+	</section>
+	
+	<section class="event">		
+		<div class="event_background">
+			<img src="Images/SunriseCoopImage/sunriseCoop 3event.png" alt="" id="eventBackground">
+			<img src="Images/SunriseCoopImage/event_image.png" alt="" id="eventForeground">
+		</div>
+		<div id="ev_text" class="event_text">
+			<h3>
+				Join us for our next open house in
+			</h3>
+				
+			<div id="countdown"> <!--container for the time -->
+				<div><span id="days">58</span><br />Days</div>
+				<div><span id="hrs">10</span><br />Hours</div>
+				<div><span id="mins">14</span><br />Minutes</div>
+				<div><span id="secs">48</span><br />Seconds</div>
+			</div>
+			<div id="display_date">
+				<p>on</p>
+				<p id="date">01/05/2025</p>
+			</div>
+		</div>		
+	</section>
+	
+	
+	<div id="s_note" class="sticky_note">
+		<p>
+			We'd love to connect with you!
+		</p>
+	</div>	
+	<!-- This is the section for the form only. There are 2 sections, on the left-side will be the texts
+			and right-side will be the form -->
+	<section class="formSection">
+		<div id= "formText" class="col-1-2">	
+			<h3>
+				Requests rates, availability, book a tour, or ask us about your retirement living options.
+			</h3>
+		</div>
+		
+		<div class="col-1-2">	
+			<form id="cInfo" action="http://www.example.com/sample" method="post">
+				<fieldset id="custInfo">			
+					<legend>Please fill out this form</legend>
+						
+					<div class="formRow">	
+						<label for="fName">First Name*</label>
+						<input name="firstName" id="fName" type="text" placeholder="First name" required >
+					</div>	
+					<div class="formRow">	
+						<label for="lName">Last Name*</label>
+						<input name="lastName" id="lName" type="text" placeholder="Last name" required >
+					</div>	
+					<div class="formRow">	
+						<label for="phone">Phone number</label>
+						<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+						pattern="^\d{10}$|^(\d3\s*)?\d{3}[\s-]?\d{4}$" >
+					</div>	
+					<div class="formRow">	
+						<label for="mail">E-mail*</label>
+						<input name="custEmail" id="mail" type="email"	required >
+					</div>	
+					
+					<div class="formRow">
+						<label for="request">I would like to...</label>
+						<select name="occupationType" id="occupation">
+							<option value="request1">book a tour.</option>
+							<option value="request2">inquire about pricing.</option>
+							<option value="request3">inquire about personal care.</option>
+							<option value="request4">inquire about dining.</option>
+							<option value="request5">others.</option>
+						</select>
+					</div>
+					
+					<div class="formRow" id="commBoxRow">
+						<label for="commBox">Comment</label>
+						<textarea name="custExp" id="commBox" maxlength="500"></textarea>
+						<p id="charCaption">Limit: 500 characters</p>
+					</div>	
+
+					<div id="buttons">					
+						<input type="submit" value="Submit" >
+					</div>					
+				</fieldset>	
+			</form>
+		</div>
+	</section>		
+	
+	<footer>
+		<h4 id="footer_logo">
+			Sunrise
+		</h4>
+		
+		<nav id="footer_nav" class="footerNavigation">
+			<ul class="footer_menu">
+				<li><a href="https://sunriseseniors.com">Sunrise's current website</a></li>
+				<li><a href="">Join Our Teams</a></li>
+				<li><a href="projectDocumentation.html">Project Documentation</a></li>
+				<li><a href="evaluationForm.html">Evaluation Form</a></li>
+				<li><a href="reference.html">Reference</a></li>
+			</ul>
+		</nav>
+		
+		<div id="localTime">
+			<h3 id="timeHeading">Local date time: </h3>
+			<div id="dateNow">11/3/2017<br />2:45:12 p.m.</div>
+		</div>
+		<div class="foot_copy" >
+			<p id="copyRight">Ibing Maharlika &copy; 2025 All Rights Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+		

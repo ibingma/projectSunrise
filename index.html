@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<!-- 
+	This is the html code for the first page. 
+	
+	Author: Ibing Maharlika
+	Date: 12/25/24
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keyword" content="retirement, retirement home, oshawa, senior, senior place, Durham, independent, co-op">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title> Sunrise </title>	
+
+	<link href="reset.css" rel="stylesheet">
+	<link href="main_layout.css" rel="stylesheet">
+	<link href="main_styles.css" rel="stylesheet">	
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="index_script.js" defer></script>
+</head>
+<body>
+	<header>	
+		<!-- Navigation to be used in 480px max screen only -->
+		<nav id="third_nav" class="thirdNavigation">
+			<button id="navicon" >
+				<img src="Images/MainPageImage/fr_navicon.png" alt="Navigation Icon">
+			</button>
+			<ul class="third_menu">
+				<li><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="#our_buildings">Our Buildings</a></li>
+				<li><a href="#locations">Locations</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>
+			
+		</nav>
+		
+		<a href="index.html" id="homeIcon">
+			<button id="home_icon" >
+				<img src="Images/MainPageImage/home_icon.png" alt="Navigation Icon">
+			</button>
+		</a>
+		
+		<nav id="top_nav" class="topNavigation">
+		
+			<ul class="top_menu">
+				<li class="link_ssp"><a href="sunriseSeniors.html">Sunrise Seniors Place</a></li>
+				<li><a href="SunriseCoop.html">Sunrise Place Co-op</a></li>
+			</ul>
+		</nav>
+		
+		<div id="header_image">			
+			<img src="Images/MainPageImage/MainImage480.png" alt="" id="MainImage480"> <!--This header image is for screen size upto 480px -->
+			
+			<div id="image_group1"> <!--This group consists of the header images for large screens which can be clicked -->
+				<img src="Images/MainPageImage/slogan2.png" alt="" id="MainImageSlogan">
+				<div id="image_group">					
+					<a href="sunriseSeniors.html" title="Sunrise Seniors Place">
+						<img src="Images/MainPageImage/sunrise-seniors-place2.png" alt="" id="MainImageSSP">
+					</a>				
+					<a href="SunriseCoop.html" title="Sunrise Place Co-op">
+						<img src="Images/MainPageImage/sunriseCoop2.png" alt="" id="MainImageSC">
+					</a>				
+				</div>	
+			</div>
+			
+			<div id="image_group2"> <!--This group consists of the header images for min 640px screen upto 960px which can be clicked -->
+				<img src="Images/MainPageImage/slogan640.png" alt="" id="MainImageSlogan640">
+				<div id="image_group640">					
+					<a href="sunriseSeniors.html" title="Sunrise Seniors Place">
+						<img src="Images/MainPageImage/sunrise-seniors-place640.png" alt="" id="MainImageSSP640">
+					</a>				
+					<a href="SunriseCoop.html" title="Sunrise Place Co-op">
+						<img src="Images/MainPageImage/sunriseCoop640.png" alt="" id="MainImageSC640">
+					</a>				
+				</div>	
+			</div>
+			
+		</div>
+
+		<nav id="second_nav" class="secondNavigation">
+			
+			<ul class="second_menu">
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="#our_buildings">Our Buildings</a></li>
+				<li><a href="#locations">Locations</a></li>
+				<li><a href="cross_reference.html">Cross-Reference</a></li>
+			</ul>			
+		</nav>	
+	</header>
+	
+	<section class="introduction">
+		<div id="about_us" class="text1">
+			<h1>
+				Welcome to Sunrise
+			</h1>
+			<h2>
+				Introduction to Sunrise community
+			</h2>
+			<p>
+				<span>M</span>ore details about Sunrise. Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit. Aliquam eget sagittis ligula, 
+				eget ornare felis. In porttitor libero vitae suscipit dictum. 
+				Proin auctor tempus volutpat. Vestibulum sit amet mauris fringilla, 
+				volutpat mi sed, maximus dolor. 
+			</p>
+		</div>	
+	
+		<div class="row1">
+			<div class="col-1-2">
+				<img src="Images/MainPageImage/people_image1.png" alt="" id="people_image1">
+			</div>
+			<div class="col-1-2">	
+				<div class="text2">
+					<h2>
+						Aging independently with dignity.
+					</h2>
+					<p id="special_characters">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Morbi dignissim massa dui, <em>at convallis turpis pulvinar 
+						accumsan</em>. Aenean mattis, magna et scelerisque sollicitudin,
+						orci massa iaculis sem, eget vestibulum metus felis a lacus.
+						Etiam consequat neque diam, non cursus lectus tristique et.
+					</p>
+				</div>
+			</div>				
+		</div>
+		
+		<div class="row2">	
+			<div class="col-1-2">					
+				<div class="text2">
+					<h2>
+						Living in a safe and healthy environment.
+					</h2>
+					<p >
+						Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. 
+						Morbi dignissim massa dui, at convallis turpis pulvinar 
+						accumsan. &lt;div&gt;This is an example of a &quot;special&quot; 
+						character: &amp;&lt;/div&gt;,
+						orci massa iaculis sem, eget vestibulum metus felis a lacus.
+						Etiam consequat neque diam, non cursus lectus tristique et.
+					</p>
+				</div>
+			</div>
+			<div class="col-1-2">	
+				<img src="Images/MainPageImage/people_image2.png" alt="" id="people_image2">
+				<figcaption>
+					 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+				</figcaption>
+			</div>	
+		</div>
+		<div class="row3">
+			<div class="col-1-2">
+				<img src="Images/MainPageImage/people_image3.jpg" alt="" id="people_image3">
+				<figcaption>
+					 Designed by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+				</figcaption>
+			</div>
+			<div class="col-1-2">	
+				<div class="text2">
+					<h2>
+						Much more than retirement living.
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Morbi dignissim massa dui, at convallis turpis pulvinar 
+						accumsan. Aenean mattis, magna et scelerisque sollicitudin,
+						orci massa iaculis sem, eget vestibulum metus felis a lacus.
+						Etiam consequat neque diam, non cursus lectus tristique et.
+					</p>
+				</div>
+			</div>				
+		</div>
+		
+			<h3 id="our_buildings">
+				Our Buildings
+			</h3>
+		<div class="row4">
+			<div class="col-1-2">
+				<h4>
+					Sunrise Seniors Place
+				</h4>
+				<hr>
+				<p>
+					75 John Street, Oshawa, Ontario L1H 1W9
+				</p>
+				<ol>
+					<li>Independent living community</li>
+					<li> Cras congue blandit.</li>
+					<li>Tincidunt tellus mollis sit amet. </li>
+				</ol>	
+				<div id="gotoButton">
+					<a href="sunriseSeniors.html" class="btn goto" title="This leads you to 'Sunrise Seniors Place' page.">Learn More</a>	
+				</div>
+			</div>
+			
+			<div class="col-1-2">
+				<h4>
+					Sunrise Place Co-Op
+				</h4>
+				<hr>
+				<p id="address_sc">
+					130 Centre Street South, Oshawa, <span>Ontario L1H 8R9</span>
+				</p>				
+				<ol>
+					<li>Nam sed mauris ultrices urna.</li>
+					<li> Cras congue blandit.</li>
+					<li>Tincidunt tellus. </li>
+				</ol>	
+				<div id="gotoButton">
+					<a href="SunriseCoop.html" class="btn goto" title="This leads you to 'Sunrise Place Co-op' page.">Learn More</a>	
+				</div>
+			</div>
+		</div>
+		
+		<h3 id="locations">
+			Locations
+		</h3>
+		
+		<div id="map" >
+		</div>
+
+		<script>
+		  // Initialize the map
+		const map = L.map('map', {
+			center: [43.8932187, -78.86465671542577],
+			zoom: 12,
+			scrollWheelZoom: false // Disable scroll wheel zoom by default
+		});
+		  // Add OpenStreetMap tiles
+		  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '© OpenStreetMap contributors'
+		  }).addTo(map);
+
+		  // Add a marker at the specified coordinates
+		  const marker = L.marker([43.8932187, -78.86465671542577]).addTo(map);
+
+		  // Add a popup to the marker (optional)
+		  marker.bindPopup("<b>Sunrise</b><br>Oshawa, ON").openPopup();
+		</script>
+	</section>
+	
+	<footer>
+		<h4 id="footer_logo">
+			Sunrise
+		</h4>
+		<nav id="footer_nav" class="footerNavigation">
+			<ul class="footer_menu">
+				<li><a href="https://sunriseseniors.com">Sunrise's current website</a></li>
+				<li><a href="">Join Our Teams</a></li>
+				<li><a href="projectDocumentation.html">Project Documentation</a></li>
+				<li><a href="evaluationForm.html">Evaluation Form</a></li>
+				<li><a href="reference.html">Reference</a></li>
+			</ul>
+		</nav>		
+		 
+		 <div class="foot_copy" >
+			<p id="foot_update">
+			Last updated: <span id="lastUpdated"></span>
+			</p>
+			<p id="copyRight">Ibing Maharlika &copy; 2025 All Rights Reserved</p>
+		</div>
+	</footer>	
+</body>
+</html>

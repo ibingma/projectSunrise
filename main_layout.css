@@ -1,0 +1,443 @@
+@charset "utf-8";
+html {
+    height: 100%;
+	 scroll-behavior: smooth;
+}
+ body {
+	height: 100vh;
+	min-height: 100%;
+	max-width: 1920px;
+	min-width: 659px;
+	width: 100%;
+}
+body >header {
+    position: relative;
+}
+
+/* ----------------------------------------------------------
+Navigation bars - fixed position for the top navigation bar
+------------------------------------------------------------*/
+nav.topNavigation {
+    margin: 0 auto;
+	 position: fixed;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 z-index: 1000;
+	 width: 100%;
+}
+nav.topNavigation li {
+    float: left;
+    width: 50%;   
+}
+nav.topNavigation li a {
+    text-align: center;
+}
+
+/* Home icon button to navigate back to the home page*/
+#home_icon {
+	position: fixed;
+	z-index:1001;
+	border: none;
+	background: none;
+	cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+#home_icon img{
+	width:100%;
+	height: 45px;	
+}
+
+/* Main image section */
+#image_group {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+}
+#image_group img {	
+	width: 100%;
+}
+#MainImageSlogan {
+	width: 40%;
+	position: absolute;
+	margin: 10em auto 0 auto;
+	left: 0;
+	right: 0;	
+}
+
+#MainImage {
+    display: block;
+    width: 100%;
+	position: relative;
+	top: 10px;
+}
+#image_group2,
+#MainImage480, #MainImage640 {
+	display: none;
+}
+#navicon{
+	display: none;
+}
+/* Second navigation bar, below header image.*/
+nav.secondNavigation {
+	position: absolute;
+   /*margin: 468px auto;*/
+   text-align: center;	
+	width: 100%;
+}
+nav.secondNavigation li {
+   float:left;
+    width: 25%;
+}
+
+.third_menu {
+	display: none;
+}
+
+/* --------------------------------------------
+About Us Section - Welcome and introduction
+--------------------------------------------- */
+/* Main flexbox container - the rest will be inside this container*/
+.introduction {	
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	position: relative;
+	height: auto;
+	text-align: center; 
+	margin: 50px auto; 	
+	left: 0;
+	right: 0;	
+	align-items: center;	
+}
+/* Rows of image and text */
+.row1, .row2, .row3, .row4{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row ;
+	flex-flow: row;	
+	width: 90%;
+}
+/* Welcome text section */
+.text1 p {
+	width: 70%;
+	margin: auto;
+}
+.text1 {
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 30px;
+}
+.col-1-2 {
+	flex:1;	
+}
+.col-1-2 img{
+	width: 80%;	
+	margin:auto; 
+}
+/* Text section besides image */
+.text2 {
+	padding: 4em 5em 1em 5em;
+}
+.col-1-2 figcaption{
+	float: right;
+	margin: 0 90px;
+}
+
+/* --------------------------------------------
+ Our Buildings section
+ --------------------------------------------*/
+h3 {
+	margin-top: 30px;
+	padding-top:20px;
+}
+.row4 {
+	width: 70%;
+}
+#gotoButton {
+	margin-top: 3.6em;	
+}
+.row4 > .col-1-2 p{
+	padding: 0 0 20px 0;
+}
+
+/* --------------------------------------------
+Map section
+---------------------------------------------*/
+#map {
+	height: 450px; 
+	width: 68%;
+}
+/* --------------------------------------------
+Footer section
+---------------------------------------------*/
+footer {
+	margin-top: 90px;
+	position: relative;
+	height: 300px;
+}
+#footer_logo {
+	text-align: center;
+}
+.footerNavigation {
+	width: 70%;
+	margin: 0 auto;
+}
+.footer_menu {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: space-evenly; /* Distribute items evenly with equal spacing */   
+}
+.footerNavigation .footer_menu li {
+    flex: 1; /* Equal width for all items */    
+	 margin-top: 50px;
+}
+.footerNavigation .footer_menu li a {
+    display: inline; /* Only the text is active */
+    padding: 10px 0; /* Add spacing inside the links */   
+}
+
+#foot_update {
+	position: absolute;
+	bottom: 0;	
+	right:0;
+	left:0;
+	text-align: center;
+	
+}
+#copyRight {
+	position: absolute;
+	bottom: 0;
+	font-size:1em;
+}
+
+@media only screen and (max-width: 480px) {
+	/*Hide main navigation menus and main image for 480px*/
+	#MainImage, 
+	nav.topNavigation, nav.secondNavigation, #home_icon, #image_group1 {
+		display: none;
+	}  
+	/* Display the main image for 480px */
+	#MainImage480 {
+		display: block;
+		 width: 100%;
+		position: relative;
+		top: 0;
+		z-index: 800;
+	}	
+	/*Display the navigation menu for 480px*/
+	.thirdNavigation{			
+		margin: 5px 0 0 5px;
+		width: 50%;
+		position: fixed;
+		z-index: 801;
+	}
+	#navicon {
+		display: block;		
+		border: none;
+		background: none;
+		position: fixed;
+	}	
+	header nav ul.third_menu {
+      display: none;	
+		list-style-type: none;		
+		margin: 0;
+		text-align: center;
+		font-size:1.5em;
+	}
+	#navicon:hover+ul, header nav ul:hover {
+      display: block;
+		position: relative;
+	}		
+	nav.thirdNavigation li {    
+		float: none;  /* Remove the float */
+		position: relative;		
+	}
+	.introduction {
+		margin-top: 0px;
+	}	
+	/* Introduction section */
+	.text1 {
+		margin-top: 0;
+		padding: 0;
+	}
+	.text2 {
+		padding: 1em 1em 5em 1em;
+	}
+	.row1, .row2, .row3, .row4 {
+		flex-flow: column;
+	}
+	.row2 {
+		flex-flow: column-reverse;
+	}
+	.row2 .text2 h2 {
+		line-height: 1.5em;
+		padding-bottom: 1em;
+	}
+	#our_buildings {
+	  margin-top: -20px;
+	  padding-top: 0;
+	}
+	.row4 {
+		width: 90%;
+	}
+	#locations {
+		margin-top: 50px;
+	}
+	footer {
+		
+		height: 400px;
+	}																	
+	.footerNavigation ul {
+		flex-flow: column;
+	}
+	#footer_logo {
+		font-size:4em;
+		line-height: 2em;
+	}
+	.footerNavigation .footer_menu li {
+		margin-top: 0;
+		font-size: 1.5em;		
+	}
+	body > footer .footerNavigation .footer_menu li a {
+		line-height: 1.8em;
+	}	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+	#home_icon img {	
+		height:30px;
+	}
+	.link_ssp {
+		margin-left: 1em;
+	}
+	nav.topNavigation li {		
+		width: 48.5%;   
+	}
+	/*Hide main navigation menus and main image for 480px*/
+	#MainImage, 
+	#MainImage480, #image_group1 {
+		display: none;
+	}  
+	/* Display the main image for SSP and SPC pages */
+	#MainImage640 {
+		display: block;
+		 width: 100%;
+		position: relative;
+		top: 0;
+		z-index: 800;
+	}	
+	/* Main image for homepage*/
+	#image_group2 {
+		display: block;
+	}
+	#image_group640 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row ;
+		flex-flow: row;
+	}
+	#image_group640 img {	
+		width: 100%;
+		
+	}
+	#MainImageSlogan640 {
+		width: 40%;
+		position: absolute;
+		margin: 5em auto 0 auto;
+		left: 0;
+		right: 0;	
+	}
+	/* Introduction section */
+	.text1 {
+		margin-top: 0;
+		padding: 0;
+	}
+	.text2 {
+		padding: 1em 1em 5em 1em;
+	}
+	.row1, .row2, .row3, .row4 {
+		flex-flow: column;
+	}
+	.row2 {
+		flex-flow: column-reverse;
+	}
+	.row2 .text2 h2 {
+		line-height: 1.5em;
+		padding-bottom: 1em;
+	}
+	/* Break the address of Sunrise Coop at our Building Section into 2 lines */
+	#address_sc span {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+	/*Hide main navigation menus and main image for 480px*/
+	#MainImage, 
+	#MainImage480, #image_group1 {
+		display: none;
+	}  	
+	/* Main image section */
+	#image_group2 {
+		display: block;
+	}
+	#image_group640 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row ;
+		flex-flow: row;
+	}
+	#image_group640 img {	
+		width: 100%;
+		
+	}
+	#MainImageSlogan640 {
+		width: 40%;
+		position: absolute;
+		margin: 8em auto 0 auto;
+		left: 0;
+		right: 0;	
+	}
+	.row1, .row2, .row3, .row4 {
+		flex-flow: column;
+	}
+	.row2 {
+		flex-flow: column-reverse;
+	}  
+	.col-1-2 img {
+		width: 80%;
+		margin: auto;
+		padding-top: 4em;
+	}
+	.text2 {
+		padding: 1em 5em;
+	}
+}
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+	#MainImageSlogan {	
+		margin: 8em auto 0 auto;
+	}
+	.row1, .row2, .row3, .row4 {
+		align-items: center;
+	}
+	.col-1-2 img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+	h2 {  
+		line-height: 2em;
+	}
+	h3 {
+		margin-top: 0;
+		padding-top:0;
+	}
+	.row4 {
+		width: 95%;
+	}
+}
